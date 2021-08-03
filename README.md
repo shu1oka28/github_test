@@ -2,7 +2,7 @@ GitHubの使い方のメモ
 ======================
 [ページ一覧](/menu.md)
 
-研究室でGitHubの使い方がよくわからないという人が多いので、「GitHubをおもちゃにする会」を実施する。このリポジトリは、会で説明しようと思っていることをメモしたものです。
+研究室でGitHubの使い方がよくわからないという人が多いので、「GitHubをおもちゃにする会」を実施しようと思っています。このリポジトリは、会で説明しようと思っていることをメモしたものです。
 このリポジトリは、先輩に言われたことをとにかくメモしたものです。
 改善点があれば、このリポジトリにPull Requestを投げるか、issueを立てるかしてください。
 
@@ -42,6 +42,7 @@ cat ~/.ssh/id_ed25519.pub
 *******+shu1oka28@users.noreply.github.com will be used for web-based Git operations, 
 ```
 `数字+user_id@users.noreply.github.com`をコピーする。コピーした文字列は、GitHubでEメールアドレスとして使う。これにより、自分の本来のメールアドレスを隠すことができる。この資料では、以後、noreply.github.comで終わるメールアドレスのことを匿名用メールアドレスと呼ぶ。
+
 11. Gitに登録する
 ```
 git config --global user.email "匿名用メールアドレス"

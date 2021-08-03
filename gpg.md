@@ -2,23 +2,22 @@ GPG Keyの追加
 ================
 [Readmeに戻る](/README.md)
 
-GPG Keyの追加方法を説明する。
-GPG Keyの追加はしなくても使える。急いでいるならやらなくていい。
-ただ、GPGで署名すると、GitHubでVerifiedと表示されてかっこいい。
-あと、Commitを本人が行ったという安心感がある。
-なので、ぜひがんばってほしい。
+GPG Keyの追加方法を説明します。
+GPG Keyの追加はしなくても使えます。急いでいるならやらなくていいです。
+ただ、GPGで署名すると、GitHubでVerifiedと表示されてかっこいい雰囲気が出ます。
+あと、Commitを本人が行ったという安心感があるというメリットもあります。
 
 参考URL: https://docs.github.com/ja/github/authenticating-to-github/managing-commit-signature-verification
 
-gpgコマンドのインストールは終わっているという前提で進める。
-また、メールアドレスは、GitHubに登録しているものか、[README](/README.md)で取得した匿名用メールアドレスを使用する
+gpgコマンドのインストールは終わっているという前提で進めます。
+また、メールアドレスは、GitHubに登録しているものか、[README](/README.md)で取得した匿名用メールアドレスを使用してください。
 
 1. GPGキーペアを作る
 
 ```
 gpg --full-generate-key
 ```
-上記を実行すると、鍵生成が始まる。入出力例を以下に示す。
+上記を実行すると、鍵生成が始まる。以下の入出力例の通りに入力してください。
 ```
 gpg (GnuPG) 2.2.12; Copyright (C) 2018 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
@@ -61,7 +60,7 @@ GnuPGはあなたの鍵を識別するためにユーザIDを構成する必要�
 ```
 gpg --list-secret-keys --keyid-format=long
 ```
-上記を実行すると以下のような出力がでる
+上記を実行すると以下のような出力がでます。
 ```
 /home/ichioka/.gnupg/pubring.kbx
 --------------------------------
@@ -71,14 +70,14 @@ uid                 [  究極  ] shu1oka28 (comment) <********+shu1oka28@users.n
 ssb   rsa4096/********** 2021-08-03 [E]
 
 ```
-上記の結果からGPGキーIDは、123456789ABCDEFであることがわかる。
+上記の結果からGPGキーIDは、123456789ABCDEFであることがわかります。
 
 
-公開鍵を入手する
+公開鍵を入手するコマンド
 ```
 gpg --armor --export 123456789ABCDEF
 ```
-このあとの手順では、この結果をコピーして、GitHubに登録する。
+このあとの手順では、この結果をコピーして、GitHubに登録します。
 
 3. GitHubにログインして、Settingsを開く
 

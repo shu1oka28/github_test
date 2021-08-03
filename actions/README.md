@@ -1,5 +1,6 @@
 GitHub Actionsの使い方
 ==========================
+[一覧に戻る](../menu.md)
 
 GitHub Actionsの使い方のメモです。
 
