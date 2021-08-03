@@ -1,0 +1,14 @@
+name: Input and Output Sample
+on:
+        workflow_dispatch:
+                inputs:
+                        input:
+                                description: 'description of input'
+                                required: true
+                                default: 'default'
+jobs:
+        input_output:
+                runs-on: ubuntu-latest
+                steps:
+                        - name: echo
+                          run: echo "Input: ${{ github.event.inputs.input }}"
